@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5dce3">
+  <meta name="description" content="Peluquería Selif, peluquería unisex en Castelló de la Plana. Consulta nuestros servicios y pide cita por teléfono.">
+  <title>Peluquería Selif | Tu estilo, tu esencia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--pink:#e8b8c5;--pale:#fff8f8;--rose:#b76e85;--gold:#ad8657;--ink:#30272b;--muted:#74696d;--white:#fff}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;font-family:"DM Sans",sans-serif;color:var(--ink);background:var(--pale);line-height:1.6}a{color:inherit;text-decoration:none}img{display:block;width:100%;object-fit:cover} .container{width:min(1160px,92%);margin:auto}
+    .topbar{position:sticky;top:0;z-index:10;background:rgba(255,248,248,.94);backdrop-filter:blur(14px);border-bottom:1px solid #eedfe3}.nav{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:12px}.brand-mark{width:43px;height:43px;border:1px solid var(--gold);color:var(--rose);border-radius:50%;display:grid;place-items:center;font-size:22px}.brand strong{display:block;font-family:"Playfair Display",serif;font-size:25px;line-height:1}.brand small{letter-spacing:3px;text-transform:uppercase;font-size:10px;color:var(--gold)}.links{display:flex;align-items:center;gap:27px;font-size:14px}.links a:hover{color:var(--rose)}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:0;border-radius:999px;padding:13px 21px;font:600 14px "DM Sans",sans-serif;cursor:pointer;transition:transform .2s,background .2s}.btn:hover{transform:translateY(-2px)}.btn-primary{background:var(--rose);color:white;box-shadow:0 8px 22px #b76e8530}.btn-outline{border:1px solid #d8b8c1;background:#fff9fa;color:var(--ink)}.menu-toggle{display:none;background:transparent;border:1px solid #ead5dc;border-radius:10px;padding:8px 12px;font-size:20px}
+    .hero{padding:36px 0 60px;background:radial-gradient(ellipse at 8% 12%,#f6e2e7 0,transparent 38%),linear-gradient(135deg,#fff9f8,#f6e5e9)}.hero-grid{display:grid;grid-template-columns: .95fr 1.05fr;align-items:center;gap:48px;min-height:520px}.eyebrow{letter-spacing:3px;text-transform:uppercase;font-weight:700;font-size:11px;color:var(--rose)}h1,h2,h3{font-family:"Playfair Display",serif;line-height:1.12}h1{font-size:clamp(44px,5.5vw,72px);margin:16px 0}h1 span{color:var(--rose);font-style:italic}.hero p{font-size:17px;color:var(--muted);max-width:470px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:27px}.hero-note{font-size:12px!important;margin-top:18px}.hero-image{position:relative}.hero-image img{height:490px;border-radius:190px 190px 18px 18px;box-shadow:0 24px 60px #4a29301d}.image-stamp{position:absolute;left:-25px;bottom:28px;background:var(--white);padding:18px 22px;border-radius:14px;box-shadow:0 10px 35px #4a29301a;font-family:"Playfair Display",serif;font-size:17px;color:var(--rose);max-width:200px}.image-stamp small{display:block;font:12px "DM Sans",sans-serif;color:var(--muted);margin-top:4px}
+    section{padding:82px 0}.section-head{text-align:center;max-width:650px;margin:0 auto 36px}.section-head h2{font-size:clamp(32px,4vw,46px);margin:10px 0 13px}.section-head p{color:var(--muted);margin:0}.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.service{padding:27px;background:white;border:1px solid #f0e2e6;border-radius:18px;transition:transform .2s,box-shadow .2s}.service:hover{transform:translateY(-4px);box-shadow:0 15px 35px #4a29300c}.service-icon{width:46px;height:46px;display:grid;place-items:center;border-radius:14px;background:#f8e7eb;color:var(--rose);font-size:22px}.service h3{font-size:22px;margin:17px 0 8px}.service p{color:var(--muted);font-size:14px;margin:0}
+    .about{background:#f6e7eb}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:54px;align-items:center}.about-image img{height:450px;border-radius:18px 150px 18px 18px}.about-copy h2{font-size:clamp(33px,4vw,47px);margin:12px 0 18px}.about-copy p{color:var(--muted)}.tick-list{list-style:none;padding:0;margin:24px 0;display:grid;gap:12px}.tick-list li:before{content:"✦";color:var(--gold);margin-right:10px}.gallery-grid{display:grid;grid-template-columns:1.15fr .85fr .85fr;grid-template-rows:220px 220px;gap:14px}.gallery-grid img{height:100%;border-radius:16px}.gallery-grid img:first-child{grid-row:span 2}.gallery-grid img:last-child{grid-column:span 2}
+    .contact{background:#34282d;color:#fff7f7}.contact .section-head p{color:#d9cbd0}.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.contact-card{padding:25px;border:1px solid #604a53;border-radius:16px;background:#403138}.contact-card span{font-size:23px;color:var(--pink)}.contact-card h3{font-size:21px;margin:13px 0 7px}.contact-card p{font-size:14px;color:#ddcfd4;margin:0 0 16px}.contact-card a.text-link{color:#f0cbd5;text-decoration:underline;text-underline-offset:4px}.footer{padding:27px 0;background:#271f23;color:#c8b8be;font-size:12px}.footer-inner{display:flex;justify-content:space-between;gap:20px;align-items:center}.footer strong{font-family:"Playfair Display",serif;color:white;font-size:19px}.notice{font-size:12px;color:#b8a8ae;margin-top:10px}
+    @media(max-width:800px){.links{display:none;position:absolute;top:78px;left:0;right:0;padding:18px 5%;background:var(--pale);border-bottom:1px solid #eedfe3;flex-direction:column;align-items:flex-start;gap:16px}.links.open{display:flex}.menu-toggle{display:block;margin-left:auto}.nav>.btn{padding:10px 14px}.hero-grid{grid-template-columns:1fr;gap:30px;padding-top:26px}.hero{padding-bottom:44px}.hero-image{max-width:580px;width:100%;margin:auto}.hero-image img{height:390px;border-radius:130px 130px 18px 18px}.image-stamp{left:-5px}.services-grid{grid-template-columns:repeat(2,1fr)}.about-grid{grid-template-columns:1fr;gap:30px}.about-image img{height:350px}.contact-grid{grid-template-columns:1fr}.gallery-grid{grid-template-rows:170px 170px;gap:9px}section{padding:62px 0}}
+    @media(max-width:480px){.brand strong{font-size:22px}.brand-mark{width:38px;height:38px}.nav{gap:10px;min-height:70px}.links{top:70px}.nav>.btn{font-size:12px;padding:9px 12px}.hero-grid{min-height:unset}.hero h1{font-size:46px}.hero p{font-size:15px}.hero-image img{height:320px}.services-grid{grid-template-columns:1fr}.service{padding:22px}.gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:190px 140px 140px}.gallery-grid img:first-child{grid-row:auto;grid-column:span 2}.gallery-grid img:last-child{grid-column:span 2}.footer-inner{flex-direction:column;align-items:flex-start}.hero-actions .btn{width:100%}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" href="#inicio" aria-label="Peluquería Selif, inicio"><span class="brand-mark">✂</span><span><strong>Selif</strong><small>Peluquería unisex</small></span></a>
+      <nav class="links" id="navLinks" aria-label="Navegación principal">
+        <a href="#inicio">Inicio</a><a href="#servicios">Servicios</a><a href="#nosotros">La peluquería</a><a href="#galeria">Galería</a><a href="#contacto">Contacto</a>
+      </nav>
+      <a class="btn btn-primary" href="tel:+34642590659">☎ Pedir cita</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    </div>
+  </header>
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">Peluquería unisex · Castellón</div>
+          <h1>Tu estilo,<br><span>tu esencia.</span></h1>
+          <p>Un espacio para cuidar de tu cabello y encontrar el estilo que habla de ti. Atención cercana y servicios de peluquería para todos.</p>
+          <div class="hero-actions"><a class="btn btn-primary" href="tel:+34642590659">☎ Llamar para pedir cita</a><a class="btn btn-outline" href="#servicios">Descubrir servicios&nbsp; ↘</a></div>
+          <p class="hero-note">Las citas se reservan directamente por teléfono.</p>
+        </div>
+        <div class="hero-image">
+          <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1100&q=85" alt="Interior luminoso y elegante de una peluquería" fetchpriority="high">
+          <div class="image-stamp">Un toque de cuidado<small>Un estilo hecho para ti</small></div>
+        </div>
+      </div>
+    </section>
+    <section id="servicios">
+      <div class="container">
+        <div class="section-head"><div class="eyebrow">Nuestros servicios</div><h2>Cuidado para cada estilo</h2><p>Descubre las opciones de peluquería y consúltanos por teléfono para encontrar la mejor para ti.</p></div>
+        <div class="services-grid">
+          <article class="service"><div class="service-icon">✂</div><h3>Corte de hombre</h3><p>Cortes clásicos y actuales adaptados a tu estilo.</p></article>
+          <article class="service"><div class="service-icon">✧</div><h3>Corte de mujer</h3><p>Cortes y acabados pensados para realzar tu imagen.</p></article>
+          <article class="service"><div class="service-icon">♡</div><h3>Corte infantil</h3><p>Opciones para los más pequeños de la familia.</p></article>
+          <article class="service"><div class="service-icon">✦</div><h3>Coloración</h3><p>Consulta las opciones de color y los resultados que buscas.</p></article>
+          <article class="service"><div class="service-icon">❋</div><h3>Peinados</h3><p>Acabados para tu día a día y ocasiones especiales.</p></article>
+          <article class="service"><div class="service-icon">❀</div><h3>Cuidado capilar</h3><p>Atención al cabello y recomendaciones según tus necesidades.</p></article>
+        </div>
+      </div>
+    </section>
+    <section class="about" id="nosotros">
+      <div class="container about-grid">
+        <div class="about-image"><img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=1000&q=85" alt="Sillones y espejos de un salón de peluquería" loading="lazy"></div>
+        <div class="about-copy"><div class="eyebrow">Peluquería Selif</div><h2>Un lugar para sentirte bien.</h2><p>Creemos que un buen corte empieza escuchando lo que buscas. Queremos que disfrutes de una atención cercana y salgas sintiéndote a gusto con tu estilo.</p><ul class="tick-list"><li>Peluquería para hombre, mujer y niños</li><li>Atención personal y cercana</li><li>Reserva sencilla por teléfono</li></ul><a class="btn btn-primary" href="tel:+34642590659">Llámanos para tu cita</a></div>
+      </div>
+    </section>
+    <section id="galeria">
+      <div class="container">
+        <div class="section-head"><div class="eyebrow">Nuestro espacio</div><h2>Un ambiente pensado para ti</h2><p>Una pequeña muestra de inspiración para tu próxima visita.</p></div>
+        <div class="gallery-grid">
+          <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=900&q=85" alt="Profesional trabajando en el cabello de una clienta" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=700&q=85" alt="Espacio de barbería" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=700&q=85" alt="Herramientas y detalles de peluquería" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1633681926022-84c23e8cb2d2?auto=format&fit=crop&w=1000&q=85" alt="Interior de un salón de peluquería" loading="lazy">
+        </div>
+        <p class="notice" style="text-align:center">Las imágenes de esta galería son ilustrativas; se podrán sustituir por fotos reales de Peluquería Selif.</p>
+      </div>
+    </section>
+    <section class="contact" id="contacto">
+      <div class="container">
+        <div class="section-head"><div class="eyebrow">Ven a conocernos</div><h2>Tu próxima cita empieza aquí</h2><p>Llámanos para consultar disponibilidad y reservar tu hora. No necesitas usar ninguna aplicación de reservas.</p></div>
+        <div class="contact-grid">
+          <article class="contact-card"><span>☎</span><h3>Pide cita por teléfono</h3><p>Habla directamente con la peluquería para reservar.</p><a class="btn btn-primary" href="tel:+34642590659">642 59 06 59</a></article>
+          <article class="contact-card"><span>⌖</span><h3>Dónde estamos</h3><p>Gran Vía de Tàrrega Monteblanco, 36<br>12006 Castelló de la Plana, Castelló</p><a class="text-link" href="https://www.google.com/maps/search/?api=1&query=Gran%20V%C3%ADa%20de%20T%C3%A0rrega%20Monteblanco%2036%2C%2012006%20Castell%C3%B3%20de%20la%20Plana" target="_blank" rel="noopener noreferrer">Cómo llegar ↗</a></article>
+          <article class="contact-card"><span>◷</span><h3>Horario</h3><p>Consulta por teléfono el horario actualizado y la disponibilidad antes de acudir.</p><a class="text-link" href="tel:+34642590659">Consultar horario ↗</a></article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><div class="container footer-inner"><div><strong>Selif</strong><div>Peluquería unisex · Castellón</div></div><div>Gran Vía de Tàrrega Monteblanco, 36 · 642 59 06 59</div><div>© <span id="year"></span> Peluquería Selif</div></div></footer>
+  <script>
+    const toggle=document.getElementById('menuToggle');
+    const links=document.getElementById('navLinks');
+    toggle.addEventListener('click',()=>{const open=links.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));toggle.setAttribute('aria-label',open?'Cerrar menú':'Abrir menú');toggle.textContent=open?'✕':'☰'});
+    links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{links.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.textContent='☰'}));
+    document.getElementById('year').textContent=new Date().getFullYear();
+  </script>
+</body>
+</html>
